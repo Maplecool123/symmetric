@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,17
+catalog,
+schema,
+table,sale_return_line_item
+keys,tran_id
+columns,tran_id,item_id,price,quantity,returned_quantity
+insert,"900","11000001","0.20","1","0"
+commit,17

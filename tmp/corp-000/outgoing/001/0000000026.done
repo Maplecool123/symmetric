@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,heartbeat
+batch,26
+catalog,
+schema,
+table,sym_node_host
+keys,node_id,host_name
+columns,node_id,host_name,instance_id,ip_address,os_user,os_name,os_arch,os_version,available_processors,free_memory_bytes,total_memory_bytes,max_memory_bytes,java_version,java_vendor,jdbc_version,symmetric_version,timezone_offset,heartbeat_time,last_restart_time,create_time
+update,"000","localhost.localdomain","localhost.localdomain-d7a8f0eb-d873-469c-b02f-6dd43f18b156","192.168.70.211","root","Linux","amd64","3.10.0-229.el7.x86_64","2","112549960","146800640","996147200","9.0.4","Oracle Corporation","mysql-connector-java-5.1.30 ( Revision: alexander.soklakov@oracle.com-20140310090514-8xt1yoht5ksg2e7c )","3.9.2","+08:00","2018-01-23 17:09:28","2018-01-23 16:39:19","2018-01-23 16:39:18","000","localhost.localdomain"
+commit,26

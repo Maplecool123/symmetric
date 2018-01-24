@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,15
+catalog,
+schema,
+table,item_selling_price
+keys,item_id,store_id
+columns,item_id,store_id,price,cost
+insert,"11000001","001","0.21","0.10"
+commit,15

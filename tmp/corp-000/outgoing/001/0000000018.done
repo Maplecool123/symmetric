@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,18
+catalog,
+schema,
+table,sale_transaction
+keys,tran_id
+columns,tran_id,store_id,workstation,day,seq
+insert,"900","001","3","2012-12-01","90"
+commit,18

@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,16
+catalog,
+schema,
+table,item
+keys,item_id
+columns,item_id,name
+insert,"11000001","Yummy Gum"
+commit,16

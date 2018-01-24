@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,config
+batch,6
+catalog,
+schema,
+table,sym_node
+keys,node_id
+columns,node_id,node_group_id,external_id,heartbeat_time,timezone_offset,sync_enabled,sync_url,schema_version,symmetric_version,config_version,database_type,database_version,batch_to_send_count,batch_in_error_count,created_at_node_id,deployment_type,deployment_sub_type
+update,"001","store","001","2018-01-23 13:35:19","+08:00","1","http://localhost.localdomain:31415/sync/store-001",,"3.9.2",,"MySQL","5.7","0","0","000",,,"001"
+commit,6

@@ -1,0 +1,31 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,12
+catalog,
+schema,
+table,sale_return_line_item
+keys,tran_id
+columns,tran_id,item_id,price,quantity,returned_quantity
+create,"<?xml version=\"1.0\"?>
+<!DOCTYPE database SYSTEM \"http://db.apache.org/torque/dtd/database\">
+<database name=\"dataextractor\">
+	<table name=\"sale_return_line_item\">
+		<column name=\"tran_id\" primaryKey=\"true\" required=\"true\" type=\"INTEGER\" size=\"10\">
+			<platform-column name=\"mysql\" type=\"INT\" size=\"10\"/>
+		</column>
+		<column name=\"item_id\" required=\"true\" type=\"INTEGER\" size=\"10\">
+			<platform-column name=\"mysql\" type=\"INT\" size=\"10\"/>
+		</column>
+		<column name=\"price\" required=\"true\" type=\"DECIMAL\" size=\"10,2\">
+			<platform-column name=\"mysql\" type=\"DECIMAL\" size=\"10\" decimalDigits=\"2\"/>
+		</column>
+		<column name=\"quantity\" required=\"true\" type=\"INTEGER\" size=\"10\">
+			<platform-column name=\"mysql\" type=\"INT\" size=\"10\"/>
+		</column>
+		<column name=\"returned_quantity\" type=\"INTEGER\" size=\"10\">
+			<platform-column name=\"mysql\" type=\"INT\" size=\"10\"/>
+		</column>
+	</table>
+</database>"
+commit,12

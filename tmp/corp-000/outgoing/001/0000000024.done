@@ -1,0 +1,11 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,24
+catalog,
+schema,
+table,sym_node
+keys,node_id
+columns,node_id,node_group_id,external_id,heartbeat_time,timezone_offset,sync_enabled,sync_url,schema_version,symmetric_version,config_version,database_type,database_version,batch_to_send_count,batch_in_error_count,created_at_node_id,deployment_type,deployment_sub_type
+sql,"update sym_incoming_batch set status='OK', error_flag=0 where node_id='000' and status != 'OK'"
+commit,24

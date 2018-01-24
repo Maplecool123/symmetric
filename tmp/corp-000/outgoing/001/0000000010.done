@@ -1,0 +1,28 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,10
+catalog,
+schema,
+table,item_selling_price
+keys,item_id,store_id
+columns,item_id,store_id,price,cost
+create,"<?xml version=\"1.0\"?>
+<!DOCTYPE database SYSTEM \"http://db.apache.org/torque/dtd/database\">
+<database name=\"dataextractor\">
+	<table name=\"item_selling_price\">
+		<column name=\"item_id\" primaryKey=\"true\" required=\"true\" type=\"INTEGER\" size=\"10\">
+			<platform-column name=\"mysql\" type=\"INT\" size=\"10\"/>
+		</column>
+		<column name=\"store_id\" primaryKey=\"true\" required=\"true\" type=\"VARCHAR\" size=\"5\">
+			<platform-column name=\"mysql\" type=\"VARCHAR\" size=\"5\"/>
+		</column>
+		<column name=\"price\" type=\"DECIMAL\" size=\"10,2\">
+			<platform-column name=\"mysql\" type=\"DECIMAL\" size=\"10\" decimalDigits=\"2\"/>
+		</column>
+		<column name=\"cost\" type=\"DECIMAL\" size=\"10,2\">
+			<platform-column name=\"mysql\" type=\"DECIMAL\" size=\"10\" decimalDigits=\"2\"/>
+		</column>
+	</table>
+</database>"
+commit,10

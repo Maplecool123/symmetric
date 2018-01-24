@@ -1,0 +1,22 @@
+nodeid,000
+binary,HEX
+channel,reload
+batch,11
+catalog,
+schema,
+table,item
+keys,item_id
+columns,item_id,name
+create,"<?xml version=\"1.0\"?>
+<!DOCTYPE database SYSTEM \"http://db.apache.org/torque/dtd/database\">
+<database name=\"dataextractor\">
+	<table name=\"item\">
+		<column name=\"item_id\" primaryKey=\"true\" required=\"true\" type=\"INTEGER\" size=\"10\">
+			<platform-column name=\"mysql\" type=\"INT\" size=\"10\"/>
+		</column>
+		<column name=\"name\" type=\"VARCHAR\" size=\"100\">
+			<platform-column name=\"mysql\" type=\"VARCHAR\" size=\"100\"/>
+		</column>
+	</table>
+</database>"
+commit,11
